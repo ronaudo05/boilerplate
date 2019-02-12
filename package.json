@@ -1,6 +1,9 @@
 {
   "name": "boilerplate",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=8.9.4"
+  },
   "scripts": {
     "clean": "rimraf dist/**/*",
     "pug": "pug src/pug/ --hierarchy -o dist -P",
