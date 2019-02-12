@@ -1,0 +1,32 @@
+/* =====================
+  base
+===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: $fontFamilyBase;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $black;
+  font-size: $fontSize-md;
+  height: 100%;
+  line-height: $lineHeight-md;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}

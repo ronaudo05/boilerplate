@@ -1,0 +1,25 @@
+@mixin hover {
+  // transition: opacity .4s;
+  &:hover {
+    opacity: .3;
+  }
+}
+
+@mixin focus {
+  outline: #006 dotted 1px;
+  @supports (-ms-ime-align: auto) {
+    & {
+      outline: #006 dotted 1px;
+    }
+  }
+}
+
+@mixin mq($breakpoint: md, $rule: min, $subtraction: false) {
+  $breakpoint: map_get($breakpoints, $breakpoint);
+  @if $rule == max and $subtraction {
+    $breakpoint: $breakpoint - 1;
+  }
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}
