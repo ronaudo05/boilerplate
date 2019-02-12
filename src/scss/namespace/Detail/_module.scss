@@ -1,11 +1,12 @@
 /* =====================
   ModuleName
 ===================== */
-.namespace-ModuleName {
+.dt-ModuleName {
   // ここにスタイルを記述
   @include mq {
     // ここにPC用のスタイルを記述
   }
+
   &_ChildNode {
     // ここにスタイルを記述
     &-variant {
@@ -14,6 +15,7 @@
         // ここにPC用のスタイルを記述
       }
     }
+
     @include mq {
       // ここにPC用のスタイルを記述
     }

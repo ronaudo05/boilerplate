@@ -3,7 +3,7 @@ module.exports = {
   entry: './src/ts/main.ts',
   output: {
     path: `${__dirname}/dist/assets/js`,
-    filename: 'main.js'
+    filename: 'build.js'
   },
   module: {
     rules: [

@@ -6,13 +6,11 @@
 @import "base/font";
 @import "base/base";
 
-//import layout
-@import "layout/container";
+//import About
+@import "namespace/About/module";
 
-//import typography
-@import "typography/heading";
+//import Detail
+@import "namespace/Detail/module";
 
-//import components
-@import "components/background";
-@import "components/hero";
-@import "components/section";
+//import Top
+@import "namespace/Top/module";
