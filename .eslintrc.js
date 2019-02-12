@@ -1,7 +1,8 @@
 module.exports = {
   "extends": ["standard", "prettier"],
   "env": {
-    "browser": true
+    "browser": true,
+    "es6": true
   },
   "plugins": ["standard", "prettier"],
   "rules": {
@@ -11,11 +12,6 @@ module.exports = {
         "singleQuote": true,
         "semi": true
       }
-    ],
-    "yoda": 0,
-    "no-unused-vars": 1
-  },
-  "globals": {
-    "$": false
+    ]
   }
 };
